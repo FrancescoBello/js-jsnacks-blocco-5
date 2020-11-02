@@ -19,29 +19,9 @@ $(document).ready(function() {
        'nome' : 'Carrera',
        'peso' : 3,
     },
-    {
-       'nome' : 'Atala',
-       'peso' : 5,
-    },
-    {
-       'nome' : 'At',
-       'peso' :1,
-    },
+
   ];
-//  var kg = [
-  //  {
-    //   'peso' : 6,
-    //},
-    //{
-      // 'peso' : 9,
-    //},
-    //{
-      // 'peso' : 7,
-  //  },
-    //{
-      // 'peso' : 10,
-    //},
-  //];
+
 
   //for (var key in biciclette) {
     //console.log(key);
