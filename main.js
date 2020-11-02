@@ -5,11 +5,11 @@ $(document).ready(function() {
   var biciclette = [
     {
        'nome' : 'Atala',
-       'peso' : 6,
+       'peso' : 10,
     },
     {
        'nome' : 'Bianchi',
-       'peso' : 9,
+       'peso' : 2,
     },
     {
        'nome' : 'Bottecchia',
@@ -17,7 +17,15 @@ $(document).ready(function() {
     },
     {
        'nome' : 'Carrera',
-       'peso' : 10,
+       'peso' : 3,
+    },
+    {
+       'nome' : 'Atala',
+       'peso' : 5,
+    },
+    {
+       'nome' : 'At',
+       'peso' :1,
     },
   ];
 //  var kg = [
@@ -39,6 +47,7 @@ $(document).ready(function() {
     //console.log(key);
   //  console.log(biciclette);
    //}
+   var controllo = biciclette[0];
    for (var i = 0; i < biciclette.length; i++) {
         var bici = biciclette[i];
         // stampo il nome e il peso
@@ -46,9 +55,13 @@ $(document).ready(function() {
         //console.log('peso in kg : ' + bici.peso);
       //  var bici_leggera = Math.min(bici.peso)
         //console.log(bici_leggera);
-        var peso_minimo = Math.min(bici.peso)
-         console.log(peso_minimo)
+        //var peso_minimo = Math.min(bici.peso)
+         //console.log(peso_minimo)
+           if (bici.peso < controllo.peso) {
+             controllo = bici;
 
+           }
     }
+    console.log(controllo);
 
 });
